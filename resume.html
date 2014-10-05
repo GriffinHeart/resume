@@ -1,0 +1,578 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Hugo Ferreira de Almeida</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Hugo Ferreira de Almeida
+					</h1>
+					<h2>
+						Software Engineer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">squall.griffinheart@gmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">(+81) 80-2200-3766</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href="http://griffinheart.com">http://griffinheart.com</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>I&#x27;ve had the opportunity to work until now in very different environments and tasks that allowed me to grow professionally and adapt quickly to change and requirements of what is needed by business. I&#x27;m always eager to learn and get things done, I want to work in challenging problems, that have impact in peoples life, with intelligent people that allow us to grow through our experiences. On the technical side I love programming, but above that I love solving problems and learning new technologies while always looking for improvement.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Twitter
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://twitter.com/leShadowGriff">leShadowGriff</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Github
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://github.com/GriffinHeart">GriffinHeart</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://www.linkedin.com/profile/view?id=5014220">Hugo Almeida</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Phybbit</span>
+					<span class="date">
+						2013-07-01 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.phybbit.com">http://www.phybbit.com</a>
+				</div>
+				<div class="position">
+					Software Engineer
+				</div>
+				<div class="summary">
+					<p>Phybbit is a multi functional team working on website and mobile applications, interactive experiences and prototype research</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Build otakyou.com an C2C &amp; B2C platform</li>
+					<li class="bullet">Work as a full stack software engineer in diverse technologies</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Imagine Virtual</span>
+					<span class="date">
+						2008-08-01 — 2013-07-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.imaginevirtual.com">http://www.imaginevirtual.com</a>
+				</div>
+				<div class="position">
+					System Administrator &amp; Developer
+				</div>
+				<div class="summary">
+					<p>Design, development and marketing office with a focus on out of the box experiences</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Maintained, monitored and improved infrastructure to support 300+ hosted domains, websites and emails</li>
+					<li class="bullet">Configured and maintained Apache, sendmail, qmail, postfix, exchange server, DNS servers, etc...</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Instituto Superior Tecnico</span>
+					<span class="date">
+						2012-04-01 — 2012-10-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://ciist.ist.utl.pt/index.php">https://ciist.ist.utl.pt/index.php</a>
+				</div>
+				<div class="position">
+					Research Fellowship
+				</div>
+				<div class="summary">
+					<p>Helped my university to manage and maintain the infrastructure needed by employees, students and faculty members.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Technical support, backup managment and troubleshooting</li>
+					<li class="bullet">Network maintenance and migrations</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Claranet</span>
+					<span class="date">
+						2008-09-01 — 2008-12-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.claranet.co.uk/">http://www.claranet.co.uk/</a>
+				</div>
+				<div class="position">
+					Consulting
+				</div>
+				<div class="summary">
+					<p>Technical consulting for the implementation of automatic .pt domain registration</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Implemented and provided support on EPP protocol over the current backoffice</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Claranet</span>
+					<span class="date">
+						2007-08-01 — 2008-08-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.claranet.co.uk/">http://www.claranet.co.uk/</a>
+				</div>
+				<div class="position">
+					Technical support and development
+				</div>
+				<div class="summary">
+					<p>Technical phone support for webhosting services and development of new backoffice systems</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Implemented the first Portuguese automatic registration module for .pt domains through EPP protocol</li>
+					<li class="bullet">Solved customer issues under Linux and Windows managed through Plesk Control Panel</li>
+					<li class="bullet">Improved current backoffice and created new systems to face new challenges</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Instituto Superior Tecnico</span>
+					<span class="date">
+						2007-01-01 — 2012-01-01
+					</span>
+				</h4>
+				<div class="area">
+					Computer Science
+				</div>
+				<div class="studyType">
+					Bachelor
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Web/Mobile Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>HTML</li>
+					<li>Ruby</li>
+					<li>Javascript</li>
+					<li>Ruby on Rails</li>
+					<li>Nodejs</li>
+					<li>Java</li>
+					<li>Android</li>
+					<li>iOS</li>
+					<li>Swift</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Software engineering</h4>
+				</div>
+				<ul class="keywords">
+					<li>BDD</li>
+					<li>12factor</li>
+					<li>Business domains</li>
+					<li>Software Architectures</li>
+					<li>Patterns</li>
+					<li>Good Practices</li>
+					<li>Continuous integration</li>
+					<li>Metodologies</li>
+					<li>User centered development</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>System Administrator/Dev ops</h4>
+				</div>
+				<ul class="keywords">
+					<li>Linux</li>
+					<li>Nginx</li>
+					<li>Apache</li>
+					<li>MTA</li>
+					<li>Docker</li>
+					<li>AWS</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Fluent
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Portuguese</strong>
+				</div>
+				<div class="fluency">
+					Native
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Japanese</strong>
+				</div>
+				<div class="fluency">
+					Beginner
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Spanish</strong>
+				</div>
+				<div class="fluency">
+					Beginner
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Hobbies</h4>
+				</div>
+				<ul class="keywords">
+					<li>Salsa dance</li>
+					<li>Club dance</li>
+					<li>Roller skate slalom</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Tech hobbies</h4>
+				</div>
+				<ul class="keywords">
+					<li>Meetups</li>
+					<li>Coding clubs</li>
+					<li>Mobile applications</li>
+					<li>Game development</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="references" class="row">
+		<aside class="col-sm-3">
+			<h3>References</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<blockquote class="reference">
+					<p>Hugo is a committed person. He sure works to get the best results from whatever mission he has. A good support engineer and an excellent php programmer. At the same time he is walking thought is way to became also a good system administrator.</p>
+					<p class="name">
+						<strong>— Joao Silva</strong>
+					</p>
+				</blockquote>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	</div>
+	
+	</body>
+</html>

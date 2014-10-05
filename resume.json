@@ -1,0 +1,191 @@
+{
+  "basics": {
+    "name": "Hugo Ferreira de Almeida",
+    "label": "Software Engineer",
+    "picture": "",
+    "email": "squall.griffinheart@gmail.com",
+    "phone": "(+81) 80-2200-3766",
+    "website": "http://griffinheart.com",
+    "summary": "I've had the opportunity to work until now in very different environments and tasks that allowed me to grow professionally and adapt quickly to change and requirements of what is needed by business. I'm always eager to learn and get things done, I want to work in challenging problems, that have impact in peoples life, with intelligent people that allow us to grow through our experiences. On the technical side I love programming, but above that I love solving problems and learning new technologies while always looking for improvement.",
+    "location": {
+      "city": "Tokyo",
+      "countryCode": "JP",
+      "region": "Minato-ku"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "leShadowGriff",
+        "url": "https://twitter.com/leShadowGriff"
+      },
+      {
+        "network": "Github",
+        "username": "GriffinHeart",
+        "url": "https://github.com/GriffinHeart"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Hugo Almeida",
+        "url": "https://www.linkedin.com/profile/view?id=5014220"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Phybbit",
+      "position": "Software Engineer",
+      "website": "http://www.phybbit.com",
+      "startDate": "2013-07-01",
+      "summary": "Phybbit is a multi functional team working on website and mobile applications, interactive experiences and prototype research",
+      "highlights": [
+        "Build otakyou.com an C2C & B2C platform",
+        "Work as a full stack software engineer in diverse technologies"
+      ]
+    },
+    {
+      "company": "Imagine Virtual",
+      "position": "System Administrator & Developer",
+      "website": "http://www.imaginevirtual.com",
+      "startDate": "2008-08-01",
+      "endDate": "2013-07-01",
+      "summary": "Design, development and marketing office with a focus on out of the box experiences",
+      "highlights": [
+        "Maintained, monitored and improved infrastructure to support 300+ hosted domains, websites and emails",
+        "Configured and maintained Apache, sendmail, qmail, postfix, exchange server, DNS servers, etc..."
+      ]
+    },
+    {
+      "company": "Instituto Superior Tecnico",
+      "position": "Research Fellowship",
+      "website": "https://ciist.ist.utl.pt/index.php",
+      "startDate": "2012-04-01",
+      "endDate": "2012-10-01",
+      "summary": "Helped my university to manage and maintain the infrastructure needed by employees, students and faculty members.",
+      "highlights": [
+        "Technical support, backup managment and troubleshooting",
+        "Network maintenance and migrations"
+      ]
+    },
+    {
+      "company": "Claranet",
+      "position": "Consulting",
+      "website": "http://www.claranet.co.uk/",
+      "startDate": "2008-09-01",
+      "endDate": "2008-12-01",
+      "summary": "Technical consulting for the implementation of automatic .pt domain registration",
+      "highlights": [
+        "Implemented and provided support on EPP protocol over the current backoffice"
+      ]
+    },
+    {
+      "company": "Claranet",
+      "position": "Technical support and development",
+      "website": "http://www.claranet.co.uk/",
+      "startDate": "2007-08-01",
+      "endDate": "2008-08-01",
+      "summary": "Technical phone support for webhosting services and development of new backoffice systems",
+      "highlights": [
+        "Implemented the first Portuguese automatic registration module for .pt domains through EPP protocol",
+        "Solved customer issues under Linux and Windows managed through Plesk Control Panel",
+        "Improved current backoffice and created new systems to face new challenges"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Instituto Superior Tecnico",
+      "area": "Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2007-01-01",
+      "endDate": "2012-01-01",
+      "gpa": "16/20"
+    }  
+  ],
+  "skills": [
+    {
+      "name": "Web/Mobile Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "Ruby",
+        "Javascript",
+        "Ruby on Rails",
+        "Nodejs",
+        "Java",
+        "Android",
+        "iOS",
+        "Swift"
+      ]
+    },
+    {
+      "name": "Software engineering",
+      "level": "Doing my best",
+      "keywords": [
+        "BDD",
+        "12factor",
+        "Business domains",
+        "Software Architectures",
+        "Patterns",
+        "Good Practices",
+        "Continuous integration",
+        "Metodologies",
+        "User centered development"
+      ]
+    },
+    {
+      "name": "System Administrator/Dev ops",
+      "level": "Advanced",
+      "keywords": [
+        "Linux",
+        "Nginx",
+        "Apache",
+        "MTA",
+        "Docker",
+        "AWS"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "Native"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Beginner"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Beginner"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Hobbies",
+      "keywords": [
+        "Salsa dance",
+        "Club dance",
+        "Roller skate slalom"
+      ]
+    },
+    {
+      "name": "Tech hobbies",
+      "keywords": [
+        "Meetups",
+        "Coding clubs",
+        "Mobile applications",
+        "Game development"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Joao Silva",
+      "reference": "Hugo is a committed person. He sure works to get the best results from whatever mission he has. A good support engineer and an excellent php programmer. At the same time he is walking thought is way to became also a good system administrator."
+    }
+  ]
+}
