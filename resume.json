@@ -36,14 +36,14 @@
       "position": "Software Engineer",
       "website": "http://www.mytenten.com",
       "startDate": "2015-04-01",
-      "summary": "Plan, design and build the backend of the TenTen platform. TenTen provides a solution for customer loyalty and is innovating in the vending machine sector by introducing a SmartBeacon inside vending machines.\nIn this role I planned and built a distributed architecture over several services that allowed independent development of each system and a clear separation of concerns. My work as one of the first backend engineers was laying out the foundation in which the platform could grow while maintaining speed of feature development and reducing the pains associated with rapid growth.",
+      "summary": "Plan, design and build the backend of the TenTen platform. TenTen provides a solution for customer loyalty and is innovating in the vending machine sector by introducing a SmartBeacon inside vending machines.\n\nIn this role I planned and built a distributed architecture over several services that allowed independent development of each system and a clear separation of concerns. My work as one of the first backend engineers was laying out the foundation in which the platform could grow while maintaining speed of feature development and reducing the pains associated with rapid growth.",
       "highlights": [
-        "Developed React/Express isomorphic web apps.",
-        "Designed and built a distributed service architecture using RabbitMQ.",
-        "Multiple REST APIs using Rails, Grape, Express.",
+        "Developed React/Express isomorphic web apps",
+        "Designed and built a distributed service architecture using RabbitMQ",
+        "Multiple REST APIs using Rails, Grape, Express",
         "Platform infrastructure & continuous integration, Heroku, AWS, Compose, CircleCI, etc...",
-        "Integrated metric collection and reporting using InfluxDB and Grafana over queue based events.",
-        "Designed the protocol that allows secure communication between the hardware and backend while passing through the phone."
+        "Integrated metric collection and reporting using InfluxDB and Grafana over queue based events",
+        "Designed the protocol that allows secure communication between the hardware and backend while passing through the phone"
       ]
     },
     {
