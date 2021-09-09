@@ -35,7 +35,7 @@
   },
   "work": [
     {
-      "company": "TenTen",
+      "name": "TenTen",
       "position": "Senior Software Engineer",
       "website": "http://www.mytenten.com",
       "startDate": "2019-07-01",
@@ -43,7 +43,7 @@
       "summary": "Project lead for pen-testing and security audit of the beacon Bluetooth communication protocols, Mobile, and all backends across several products. Plan for migration from PaaS to cloud systems and define roadmap and product management."
     },
     {
-      "company": "DI.FM",
+      "name": "DI.FM",
       "position": "Remote Senior Software Engineer",
       "website": "https://di.fm",
       "startDate": "2016-09-01",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "company": "TenTen",
+      "name": "TenTen",
       "position": "Software Engineer",
       "website": "http://www.mytenten.com",
       "startDate": "2015-04-01",
@@ -75,7 +75,7 @@
       ]
     },
     {
-      "company": "Phybbit",
+      "name": "Phybbit",
       "position": "Software Engineer",
       "website": "http://www.phybbit.com",
       "startDate": "2013-07-01",
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "company": "Imagine Virtual",
+      "name": "Imagine Virtual",
       "position": "System Administrator & Developer",
       "website": "http://www.imaginevirtual.com",
       "startDate": "2008-08-01",
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "company": "Instituto Superior Tecnico",
+      "name": "Instituto Superior Tecnico",
       "position": "Research Fellowship",
       "website": "https://ciist.ist.utl.pt/index.php",
       "startDate": "2012-04-01",
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "company": "Claranet",
+      "name": "Claranet",
       "position": "Consulting",
       "website": "http://www.claranet.co.uk/",
       "startDate": "2008-09-01",
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "company": "Claranet",
+      "name": "Claranet",
       "position": "Technical support and development",
       "website": "http://www.claranet.co.uk/",
       "startDate": "2007-08-01",

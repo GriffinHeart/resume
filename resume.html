@@ -1,608 +1,554 @@
-<!doctype html>
-<html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Hugo Ferreira de Almeida</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hugo Ferreira de Almeida</title>
+    <meta name="description" content="I&#x27;ve had the opportunity to work in a number of different environments and on tasks that allowed me to grow professionally and adapt quickly to change and the requirements of business. I&#x27;m always eager to learn and get things done. I want to work on challenging problems that impact people&#x27;s lives. On the technical side, I love software engineering, but above and beyond that, I love solving problems and learning new technologies while continually searching for improvement.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <style>:root {
+  /* Colors */
+  --primaryColor: #212529;
+  --secondaryColor: #95a5a6;
+  --accentColor: #f1c40f;
+  --linkColor: #2ecc71;
+  --mutedColor: #f4f6f6;
+
+  /* Typography */
+  --ratio: 1.25;
+  --scale0: 1rem;
+  --scale1: calc(var(--scale0) * var(--ratio));
+  --scale2: calc(var(--scale1) * var(--ratio));
+  --scale3: calc(var(--scale2) * var(--ratio));
+  --scale4: calc(var(--scale3) * var(--ratio));
+  --scale5: calc(var(--scale4) * var(--ratio));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
 body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
+  color: var(--primaryColor);
+  display: grid;
+  font: 1em/1.5 Lato, sans-serif;
+  gap: 2em;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start side-start]
+    minmax(min-content, 12em)
+    [side-end content-start]
+    minmax(min-content, 36em)
+    [main-end content-end]
+    1fr
+    [full-end];
+  grid-template-rows: auto [content] 0;
+  margin-bottom: 4em;
 }
+
+body::before {
+  content: '';
+  grid-column: full;
+  grid-row: content;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+}
+
+li + li {
+  margin-top: 0.2em;
+}
+
+li::marker {
+  color: var(--mutedColor);
+}
+
 a {
-	color: #2ecc71;
+  color: var(--linkColor);
+  text-decoration: none;
+  transition: color 0.2s;
 }
+
 a:focus,
 a:hover {
-	color: #f1c40f;
-	text-decoration: none;
+  color: var(--accentColor);
 }
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
+
 h1,
 h2,
 h3,
+h5 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--scale5);
+}
+
+h2 {
+  color: var(--secondaryColor);
+  font-size: var(--scale4);
+}
+
+h3 {
+  color: var(--accentColor);
+  font-size: var(--scale3);
+  grid-column: side;
+  margin-bottom: 1rem;
+}
+
 h4 {
-	margin-top: 0
+  font-size: var(--scale2);
 }
-section {
-	margin-top: 30px;
+
+h5 {
+  font-size: var(--scale1);
 }
-li {
-	line-height: 1.8;
-	list-style: none;
+
+h6 {
+  font-size: var(--scale0);
 }
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
+
 blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
-}
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
-}
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
-}
-.container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
+  border-left: 0.2em solid var(--mutedColor);
+  padding-left: 1em;
 }
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
+cite {
+  color: var(--secondaryColor);
+  font-style: inherit;
 }
 
-	</style>
-	
-	</head>
-	<body>
-	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						Hugo Ferreira de Almeida
-					</h1>
-					<h2>
-						Software Engineer
-					</h2>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
+cite::before {
+  content: '— ';
+}
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="137b66747c75727f7e767a777253747e727a7f3d707c7e">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">(+81) 80-2200-3766</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href="http://griffinheart.com">http://griffinheart.com</a>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>I&#x27;ve had the opportunity to work until now in very different environments and tasks that allowed me to grow professionally and adapt quickly to change and requirements of what is needed by business. I&#x27;m always eager to learn and get things done, I want to work in challenging problems, that have impact in people&#x27;s life. On the technical side I love software engineering, but above that I love solving problems and learning new technologies while always looking for improvement.</p>
-		</div>
-	</section>
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-sm-6">
-					<strong class="network">
-						Twitter
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://twitter.com/leShadowGriff">leShadowGriff</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						Github
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://github.com/GriffinHeart">GriffinHeart</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						LinkedIn
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://www.linkedin.com/profile/view?id=5014220">Hugo Almeida</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+.masthead {
+  background: var(--mutedColor);
+  display: inherit;
+  gap: inherit;
+  grid-column: full;
+  grid-template-columns: inherit;
+  padding: 4em 0;
+  row-gap: 0;
+}
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>TenTen</span>
-					<span class="date">
-						2015-04-01 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.mytenten.com">http://www.mytenten.com</a>
-				</div>
-				<div class="position">
-					Software Engineer
-				</div>
-				<div class="summary">
-					<p>Plan, design and build the backend of the TenTen platform. TenTen provides a solution for customer loyalty and is innovating in the vending machine sector by introducing a SmartBeacon inside vending machines.
+.masthead > *,
+section {
+  grid-column: main;
+}
 
-In this role I planned and built a distributed architecture over several services that allowed independent development of each system and a clear separation of concerns. My work as one of the first backend engineers was laying out the foundation in which the platform could grow while maintaining speed of feature development and reducing the pains associated with rapid growth.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Developed React/Express isomorphic web apps</li>
-					<li class="bullet">Designed and built a distributed service architecture using RabbitMQ</li>
-					<li class="bullet">Multiple REST APIs using Rails, Grape, Express</li>
-					<li class="bullet">Platform infrastructure &amp; continuous integration, Heroku, AWS, Compose, CircleCI, etc...</li>
-					<li class="bullet">Integrated metric collection and reporting using InfluxDB and Grafana over queue based events</li>
-					<li class="bullet">Designed the protocol that allows secure communication between the hardware and backend while passing through the phone</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Phybbit</span>
-					<span class="date">
-						2013-07-01 — 2015-04-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.phybbit.com">http://www.phybbit.com</a>
-				</div>
-				<div class="position">
-					Software Engineer
-				</div>
-				<div class="summary">
-					<p>Phybbit is a multi functional team working on website and mobile applications, interactive experiences and prototype research. My role at Phybbit, as part of the team developing solutions for clients, was to plan, design and build their vision. It involved working in diverse technologies not only on the backend as well as on mobile and web.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Ruby on Rails and Express REST APIs</li>
-					<li class="bullet">Infrastructure planning and management on AWS</li>
-					<li class="bullet">Android applications in eCommerce, Beacons/Bluetooth</li>
-					<li class="bullet">Prototypes and MVP development</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Imagine Virtual</span>
-					<span class="date">
-						2008-08-01 — 2013-07-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.imaginevirtual.com">http://www.imaginevirtual.com</a>
-				</div>
-				<div class="position">
-					System Administrator &amp; Developer
-				</div>
-				<div class="summary">
-					<p>Design, development and marketing office with a focus on out of the box experiences</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Maintained, monitored and improved infrastructure to support 300+ hosted domains, websites and emails</li>
-					<li class="bullet">Configured and maintained Apache, sendmail, qmail, postfix, exchange server, DNS servers, etc...</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Instituto Superior Tecnico</span>
-					<span class="date">
-						2012-04-01 — 2012-10-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://ciist.ist.utl.pt/index.php">https://ciist.ist.utl.pt/index.php</a>
-				</div>
-				<div class="position">
-					Research Fellowship
-				</div>
-				<div class="summary">
-					<p>Helped my university to manage and maintain the infrastructure needed by employees, students and faculty members.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Technical support, backup managment and troubleshooting</li>
-					<li class="bullet">Network maintenance and migrations</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Claranet</span>
-					<span class="date">
-						2008-09-01 — 2008-12-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.claranet.co.uk/">http://www.claranet.co.uk/</a>
-				</div>
-				<div class="position">
-					Consulting
-				</div>
-				<div class="summary">
-					<p>Technical consulting for the implementation of automatic .pt domain registration</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Implemented and provided support on EPP protocol over the current backoffice</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Claranet</span>
-					<span class="date">
-						2007-08-01 — 2008-08-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.claranet.co.uk/">http://www.claranet.co.uk/</a>
-				</div>
-				<div class="position">
-					Technical support and development
-				</div>
-				<div class="summary">
-					<p>Technical phone support for webhosting services and development of new backoffice systems</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Implemented the first Portuguese automatic registration module for .pt domains through EPP protocol</li>
-					<li class="bullet">Solved customer issues under Linux and Windows managed through Plesk Control Panel</li>
-					<li class="bullet">Improved current backoffice and created new systems to face new challenges</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+article > * + *,
+blockquote > * + * {
+  margin-top: 0.6em;
+}
 
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Instituto Superior Tecnico</span>
-					<span class="date">
-						2007-01-01 — 2012-01-01
-					</span>
-				</h4>
-				<div class="area">
-					Computer Science
-				</div>
-				<div class="studyType">
-					Bachelor
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Web/Mobile Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>Ruby</li>
-					<li>Ruby on Rails</li>
-					<li>Javascript</li>
-					<li>React</li>
-					<li>RabbitMQ</li>
-					<li>Express</li>
-					<li>Nodejs</li>
-					<li>Java</li>
-					<li>Android</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Software engineering</h4>
-				</div>
-				<ul class="keywords">
-					<li>Agile &amp;&amp;|| Scrum</li>
-					<li>BDD</li>
-					<li>12factor</li>
-					<li>Domain driven development</li>
-					<li>Software Architecture</li>
-					<li>Patterns</li>
-					<li>Continuous integration</li>
-					<li>User centered development</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>System Administrator/Dev ops</h4>
-				</div>
-				<ul class="keywords">
-					<li>Linux</li>
-					<li>Nginx</li>
-					<li>Apache</li>
-					<li>MTA</li>
-					<li>Docker</li>
-					<li>AWS</li>
-					<li>Heroku</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+.stack {
+  display: grid;
+  gap: 1.5em;
+}
 
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>English</strong>
-				</div>
-				<div class="fluency">
-					Fluent
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Portuguese</strong>
-				</div>
-				<div class="fluency">
-					Native
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Japanese</strong>
-				</div>
-				<div class="fluency">
-					Beginner
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Spanish</strong>
-				</div>
-				<div class="fluency">
-					Beginner
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
+.grid-list {
+  display: grid;
+  gap: 1em;
+}
 
-	<section id="interests" class="row">
-		<aside class="col-sm-3">
-			<h3>Interests</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Hobbies</h4>
-				</div>
-				<ul class="keywords">
-					<li>Salsa dance</li>
-					<li>Roller skate slalom</li>
-					<li>Dodgeball</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Tech hobbies</h4>
-				</div>
-				<ul class="keywords">
-					<li>Meetups</li>
-					<li>Coding clubs</li>
-					<li>Mobile applications</li>
-					<li>Game development</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="references" class="row">
-		<aside class="col-sm-3">
-			<h3>References</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<blockquote class="reference">
-					<p>Hugo is a committed person. He sure works to get the best results from whatever mission he has. A good support engineer and an excellent php programmer. At the same time he is walking thought is way to became also a good system administrator.</p>
-					<p class="name">
-						<strong>— Joao Silva</strong>
-					</p>
-				</blockquote>
-			</div>
-			</div>
-		</div>
-	</section>
+.spaced-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-	</div>
-	
-	</body>
+.spaced-list:first-child::before {
+  border-bottom: 1px solid var(--mutedColor);
+  content: '';
+  flex-grow: 1;
+  margin: 0 1em;
+  order: 1;
+}
+
+.spaced-list > :nth-child(2) {
+  order: 2;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: var(--mutedColor);
+  margin: 0 0.2em 0.2em 0;
+  padding: 0.2em 0.6em;
+}
+
+@media print, (min-width: 48em) {
+  h3 {
+    text-align: right;
+    margin-bottom: inherit;
+  }
+
+  .masthead > *,
+  section {
+    grid-column: content;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+      <header class="masthead">
+          <h1>Hugo Ferreira de Almeida</h1>
+          <h2>Software Engineer</h2>
+      </header>
+      <section id="contact">
+        <h3>Contact</h3>
+        <div class="grid-list">
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:hugofalmeida@gmail.com">hugofalmeida@gmail.com</a>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              (+81) 80-2200-3766
+            </div>
+        </div>
+      </section>
+        <section id="about">
+          <h3>About</h3>
+          <article>
+            <p>I've had the opportunity to work in a number of different environments and on tasks that allowed me to grow professionally and adapt quickly to change and the requirements of business. I'm always eager to learn and get things done. I want to work on challenging problems that impact people's lives. On the technical side, I love software engineering, but above and beyond that, I love solving problems and learning new technologies while continually searching for improvement.</p>
+          </article>
+        </section>
+        <section id="profiles">
+          <h3>Profiles</h3>
+          <div class="grid-list">
+              <div>
+                  <h4>Twitter</h4>
+                    <a href="https://twitter.com/leShadowGriff">leShadowGriff</a>
+              </div>
+              <div>
+                  <h4>Github</h4>
+                    <a href="https://github.com/GriffinHeart">GriffinHeart</a>
+              </div>
+              <div>
+                  <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/profile/view?id&#x3D;5014220">Hugo Almeida</a>
+              </div>
+          </div>
+        </section>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>TenTen</h4>
+                  <span>
+                    <time datetime="2019-07-01">Jul 2019</time> –
+                    <time datetime="2020-05-01">May 2020</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Senior Software Engineer</strong>
+                </div>
+              </header>
+                <p>Project lead for pen-testing and security audit of the beacon Bluetooth communication protocols, Mobile, and all backends across several products. Plan for migration from PaaS to cloud systems and define roadmap and product management.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>DI.FM</h4>
+                  <span>
+                    <time datetime="2016-09-01">Sep 2016</time> –
+                    <time datetime="2019-06-01">Jun 2019</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Remote Senior Software Engineer</strong>
+                </div>
+              </header>
+                <p>Backend development for the systems and API's that power the DI.FM Mobile and web applications. Part of distributed engineering team working remotely across 4 different continents to deliver the high quality audio experience of DI.FM Built the core technology for the new playlist generation system and the migration to a CDN based approach of the DI.FM products, optimised poorly performing services and API responses across several infrastructure layers.</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Implemented the next generation playlist generation system in a highly performant and extendable structure.</li>
+                    <li>Migrated and improved general software structure from legacy systems</li>
+                    <li>Optimised several poorly-performant parts of the system</li>
+                    <li>Worked with product team and engineering across timezones to execute a major Product change to CDN delivery</li>
+                    <li>Maintained and refactored multiple of the existing Ruby, Ruby on Rails, MySQL systems.</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>TenTen</h4>
+                  <span>
+                    <time datetime="2015-04-01">Apr 2015</time> –
+                    <time datetime="2016-09-01">Sep 2016</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Software Engineer</strong>
+                </div>
+              </header>
+                <p>TenTen provides customer loyalty-related solutions and is innovating in the vending machine sector by introducing a SmartBeacon inside vending machines. In this role, I planned and built a distributed architecture over several services that allows independent development of each system and a clear separation of concerns. My work, as one of the first backend engineers, was laying out a foundation that enables platform growth while maintaining speed of feature development and reducing the pains associated with rapid growth.</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Planned, designed, and built the backend of the TenTen platform</li>
+                    <li>Developed React/Express isomorphic web apps</li>
+                    <li>Designed and built a distributed service architecture using RabbitMQ</li>
+                    <li>Multiple REST APIs using Rails, Grape and Express</li>
+                    <li>Platform infrastructure &amp; continuous integration, Heroku, AWS, Compose, CircleCI, and other technologies</li>
+                    <li>Integrated metric collection and reporting using InfluxDB and Grafana over queue-based events</li>
+                    <li>Designed the protocol that allows secure communication between the hardware and backend over mobile phones</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Phybbit</h4>
+                  <span>
+                    <time datetime="2013-07-01">Jul 2013</time> –
+                    <time datetime="2015-04-01">Apr 2015</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Software Engineer</strong>
+                </div>
+              </header>
+                <p>Phybbit is a multifunctional team working on website and mobile applications, interactive experiences, and prototype research. My role at Phybbit was to plan, design, and build customer visions. This involved working as part of the client solution team and with diverse backend, mobile, and web technologies</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Ruby on Rails and Express REST APIs</li>
+                    <li>Infrastructure planning and management on AWS</li>
+                    <li>Android applications in eCommerce, Beacons/Bluetooth</li>
+                    <li>Prototypes and MVP development</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Imagine Virtual</h4>
+                  <span>
+                    <time datetime="2008-08-01">Aug 2008</time> –
+                    <time datetime="2013-07-01">Jul 2013</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>System Administrator &amp; Developer</strong>
+                </div>
+              </header>
+                <p>Design, development and marketing office with a focus on out of the box experiences</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Maintained, monitored and improved infrastructure to support 300+ hosted domains, websites and emails</li>
+                    <li>Configured and maintained Apache, sendmail, qmail, postfix, exchange server, DNS servers, etc...</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Instituto Superior Tecnico</h4>
+                  <span>
+                    <time datetime="2012-04-01">Apr 2012</time> –
+                    <time datetime="2012-10-01">Oct 2012</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Research Fellowship</strong>
+                </div>
+              </header>
+                <p>Helped my university to manage and maintain the infrastructure needed by employees, students and faculty members.</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Technical support, backup managment and troubleshooting</li>
+                    <li>Network maintenance and migrations</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Claranet</h4>
+                  <span>
+                    <time datetime="2008-09-01">Sep 2008</time> –
+                    <time datetime="2008-12-01">Dec 2008</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Consulting</strong>
+                </div>
+              </header>
+                <p>Technical consulting for the implementation of automatic .pt domain registration</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Implemented and provided support on EPP protocol over the current backoffice</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Claranet</h4>
+                  <span>
+                    <time datetime="2007-08-01">Aug 2007</time> –
+                    <time datetime="2008-08-01">Aug 2008</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Technical support and development</strong>
+                </div>
+              </header>
+                <p>Technical phone support for webhosting services and development of new backoffice systems</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Implemented the first Portuguese automatic registration module for .pt domains through EPP protocol</li>
+                    <li>Solved customer issues under Linux and Windows managed through Plesk Control Panel</li>
+                    <li>Improved current backoffice and created new systems to face new challenges</li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Instituto Superior Tecnico</h4>
+                  <span>
+                    <time datetime="2007-01-01">Jan 2007</time> –
+                    <time datetime="2012-01-01">Jan 2012</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Computer Science</strong>
+                </div>
+              </header>
+                <p>Bachelor</p>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Web/Mobile Development</h4>
+                <ul class="tag-list">
+                    <li>Ruby</li>
+                    <li>Ruby on Rails</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>RabbitMQ</li>
+                    <li>Express</li>
+                    <li>Nodejs</li>
+                    <li>Java</li>
+                    <li>Android</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Software engineering</h4>
+                <ul class="tag-list">
+                    <li>Agile &amp;&amp;|| Scrum</li>
+                    <li>BDD</li>
+                    <li>12factor</li>
+                    <li>Domain driven development</li>
+                    <li>Software Architecture</li>
+                    <li>Patterns</li>
+                    <li>Continuous integration</li>
+                    <li>User centered development</li>
+                </ul>
+            </div>
+            <div>
+                <h4>System Administrator/Dev ops</h4>
+                <ul class="tag-list">
+                    <li>Linux</li>
+                    <li>Nginx</li>
+                    <li>Apache</li>
+                    <li>MTA</li>
+                    <li>Docker</li>
+                    <li>AWS</li>
+                    <li>Heroku</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="languages">
+        <h3>Languages</h3>
+        <div class="grid-list">
+            <div>
+                <h4>English</h4>
+              Fluent
+            </div>
+            <div>
+                <h4>Portuguese</h4>
+              Native
+            </div>
+            <div>
+                <h4>Japanese</h4>
+              Beginner
+            </div>
+            <div>
+                <h4>Spanish</h4>
+              Beginner
+            </div>
+        </div>
+      </section>
+      <section id="interests">
+        <h3>Interests</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Hobbies</h4>
+                <ul class="tag-list">
+                    <li>Salsa dance</li>
+                    <li>Roller skate slalom</li>
+                    <li>Dodgeball</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Tech hobbies</h4>
+                <ul class="tag-list">
+                    <li>Meetups</li>
+                    <li>Coding clubs</li>
+                    <li>Mobile applications</li>
+                    <li>Game development</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="references">
+        <h3>References</h3>
+        <div class="stack">
+              <blockquote>
+                <p>Hugo is a committed person. He sure works to get the best results from whatever mission he has. A good support engineer and an excellent php programmer. At the same time he is walking thought is way to became also a good system administrator.</p>
+                  <p>
+                    <cite>Joao Silva</cite>
+                  </p>
+              </blockquote>
+        </div>
+      </section>
+  </body>
 </html>
