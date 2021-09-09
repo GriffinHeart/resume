@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "theme": "elegant"
+  },
   "basics": {
     "name": "Hugo Ferreira de Almeida",
     "label": "Software Engineer",
@@ -207,6 +210,14 @@
     }
   ],
   "interests": [
+    {
+      "name": "Hobbies",
+      "keywords": [
+        "Salsa dance",
+        "Roller skate slalom",
+        "Dodgeball"
+      ]
+    },
     {
       "name": "Tech hobbies",
       "keywords": [

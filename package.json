@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/GriffinHeart/resume#readme",
   "dependencies": {
-    "resume-cli": "^0.4.13"
+    "resume-cli": "^3.0.5"
   }
 }
