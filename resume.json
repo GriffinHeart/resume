@@ -10,7 +10,7 @@
     "location": {
       "city": "Tokyo",
       "countryCode": "JP",
-      "region": "Minato-ku"
+      "region": "Ota-ku"
     },
     "profiles": [
       {
@@ -33,9 +33,33 @@
   "work": [
     {
       "company": "TenTen",
+      "position": "Senior Software Engineer",
+      "website": "http://www.mytenten.com",
+      "startDate": "2019-07-01",
+      "endDate": "2020-05-01",
+      "summary": "Project lead for pen-testing and security audit of the beacon Bluetooth communication protocols, Mobile, and all backends across several products. Plan for migration from PaaS to cloud systems and define roadmap and product management."
+    },
+    {
+      "company": "DI.FM",
+      "position": "Remote Senior Software Engineer",
+      "website": "https://di.fm",
+      "startDate": "2016-09-01",
+      "endDate": "2019-06-01",
+      "summary": "Backend development for the systems and API's that power the DI.FM Mobile and web applications. Part of distributed engineering team working remotely across 4 different continents to deliver the high quality audio experience of DI.FM Built the core technology for the new playlist generation system and the migration to a CDN based approach of the DI.FM products, optimised poorly performing services and API responses across several infrastructure layers.",
+      "highlights": [
+        "Implemented the next generation playlist generation system in a highly performant and extendable structure.",
+        "Migrated and improved general software structure from legacy systems",
+        "Optimised several poorly-performant parts of the system",
+        "Worked with product team and engineering across timezones to execute a major Product change to CDN delivery",
+        "Maintained and refactored multiple of the existing Ruby, Ruby on Rails, MySQL systems."
+      ]
+    },
+    {
+      "company": "TenTen",
       "position": "Software Engineer",
       "website": "http://www.mytenten.com",
       "startDate": "2015-04-01",
+      "endDate": "2016-09-01",
       "summary": "TenTen provides customer loyalty-related solutions and is innovating in the vending machine sector by introducing a SmartBeacon inside vending machines. In this role, I planned and built a distributed architecture over several services that allows independent development of each system and a clear separation of concerns. My work, as one of the first backend engineers, was laying out a foundation that enables platform growth while maintaining speed of feature development and reducing the pains associated with rapid growth.",
       "highlights": [
         "Planned, designed, and built the backend of the TenTen platform",
@@ -183,14 +207,6 @@
     }
   ],
   "interests": [
-    {
-      "name": "Hobbies",
-      "keywords": [
-        "Salsa dance",
-        "Roller skate slalom",
-        "Dodgeball"
-      ]
-    },
     {
       "name": "Tech hobbies",
       "keywords": [
